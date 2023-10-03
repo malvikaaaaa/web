@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+ <main class="container">
+    <div class="row">
+        <div class="col-2"></div>
+            <div class="col-8">
+                <form id="reg">
+                  <center>  <h1>REGISTRATION FORM</h1></center>
+                    <table cellpadding="5" width="100%">
+                        <tr>
+                            <td>Name:</td>
+                            <td><input type="text" placeholder="enter your name" class="form-control" name="name" id="name"></td>
+                        </tr>
+                        <tr>
+                            <td>Select Course:</td>
+                            <td>
+                                <select name="course" id="course" class="form-control">
+                                    <option value="bca">BCA</option>
+                                    <option value="ba">BA</option>
+                                    <option value="bsc">Bsc</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Guardian:</td>
+                            <td><input type="text" placeholder="enter Guardian name" class="form-control" name="guardian" id="guardian"></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>
+                                <input type="radio" value="male" id="gender" name="gender" >&nbsp;male&nbsp;
+                                <input type="radio" value="female" id="gender" name="gender">&nbsp;female&nbsp;
+                                <input type="radio" value="others" id="gender" name="gender">&nbsp;others&nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Date Of Birth</td>
+                            <td><input type="date" class="form-control" name="dob" id="dob"></td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td><textarea name="address" id="address" cols="30" rows="3" class="form-control"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Phone No:</td>
+                            <td><input type="number" id="Phone" name="phone" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>Hobbies</td>
+                            <td>
+                                <input type="checkbox" value="dance" id="hobbies" name="hobbies"  >&nbsp;Dance &nbsp;
+                                <input type="checkbox" value="songs" id="hobbies" name="hobbies" >&nbsp;Songs&nbsp;
+                                <input type="checkbox" value="Cricket" id="hobbies" name="hobbies" >&nbsp;Cricket&nbsp;
+                                <input type="checkbox" value="Cricket" id="hobbies" name="hobbies" >&nbsp;Football&nbsp;
+                                <input type="checkbox" value="Cricket" id="hobbies" name="hobbies" >&nbsp;Others&nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        <div class="col-2"></div>
+    </div>
+ </main>   
+</body>
+</html>
