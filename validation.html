@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>TABLE</title>
+        <style>
+            .required{color: crimson;}
+            a{
+                text-decoration: none;
+                color: black;
+            }
+
+            input[type="submit"]
+            {
+                background:rgb(162, 202, 235);
+               border-radius: 5%;
+            }
+            input[type="reset"]
+            {
+                background:rgb(162, 202, 235);
+               border-radius: 5%;
+            }
+        </style>
+  
+	<script type="text/javascript">
+    function validation()
+    {
+        if(document.forms.Test.firstname.value=="")
+        {
+            window.alert("please provide firstname");
+            document.forms.Test.fname.focus();
+            return false;
+        }
+        if(document.forms.Test.lname.value=="")
+        {
+            window.alert("please provide lastname");
+            document.forms.Test.lname.focus();
+            return false;
+        }
+        if(document.forms.Test.address.value=="")
+        {
+            window.alert("please provide address");
+            document.forms.Test.address.focus();
+            return false;
+        }
+        if(document.forms.Test.email.value=="")
+        {
+            window.alert("please provide email");
+            document.forms.Test.email.focus();
+            return false;
+        }
+        if(document.forms.Test.dob.value=="")
+        {
+            window.alert("please provide dob");
+            document.forms.Test.dob.focus();
+            return false;
+        }
+        if(document.forms.Test.phone.value=="")
+        {
+            window.alert("please provide phonenumber");
+            document.forms.Test.phone.focus();
+            return false;
+        }
+        if(document.forms.Test.pswd.value=="")
+        {
+            window.alert("please provide password");
+            document.forms.Test.pswd.focus();
+            return false;
+        }
+    }
+	function repeat()
+	{
+		var sub=document.getElementById("T1")=value;
+		document.write("subject and mark is = "+sub);
+	}
+	function refresh()
+	{
+		document.getElementById("Test").reset();
+	}
+	</script>
+  <body>
+	<form id="Test" onsubmit="return validation()" action="validation.html">
+		
+        <center><h3><u>STUDENT REGISTRATION</u></h3>
+            <br><br>
+        <table border="2" height="300" width="300" bgcolor="lightgrey">
+            <tr>
+                <td>First Name<span class="required">*</span></td>
+                <td><input type="text" name="firstname" id="fname"></td>
+            </tr>
+            <tr>
+                <td>Last Name<span class="required">*</span></td>
+                <td><input type="text" name="lastname" id="lname"></td>
+            </tr>
+            <tr>
+                <td>Course<span class="required">*</span></td>
+                <td><select name="drop">
+                        <option value="BCA">BCA</option>
+                        <option value="MCA">MCA</option>
+                        <option value="MBA">MBA</option>
+                        <option value="BTech">BTech</option>
+
+                    </select>               
+                </td>
+            </tr>
+            <tr>
+                <td>Address<span class="required">*</span></td>
+                <td><textarea rows="4" id="address"></textarea></td>
+            </tr>
+            <tr>
+                <td>Date of Birth<span class="required">*</span></td>
+                <td><input type="date" name="date of birth" id="dob"></td>
+            </tr>
+            <tr>
+                <td>Email<span class="required">*</span></td>
+                <td><input type="email" name="email" id="email" ></td>
+            </tr>
+            <tr>
+                <td>Phone Number<span class="required">*</span></td>
+                <td><input type="number" name="mobilenumber" id="phone"> </td>
+            </tr>
+            <tr>
+                <td>Password<span class="required">*</span></td>
+                <td><input type="password" name="password" id="pswd"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><center><input type="submit" value="sign in">&nbsp&nbsp<input type="reset" value="Reset"></center></td>
+            </tr>
+            <tr>
+                <td colspan="2"><center><a href="name.html">Go to Homepage</a></center></td>
+            </tr>
+	    
+        </table>
+	
+	
+    </center>
+    <br>
+    <marquee>WARNING: Recheck the entered details before submit</marquee>
+    </body>
+    </head>
+</html>
