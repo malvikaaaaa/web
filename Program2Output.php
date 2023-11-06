@@ -27,7 +27,7 @@
         
         <form id='form2'>
             
-            <h1 style='color: crimson'><u>OLIVE FAMILY MART</u></h1>
+            <h1 style='color: crimson'><u>FAMILY MART</u></h1>
             <h2 style='color: darkred'><u>BILL RECEIPT</u></h2>
             <br>
             
