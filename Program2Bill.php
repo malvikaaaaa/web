@@ -19,7 +19,7 @@
         <br><br> 
         <form id="form1" method='post' action="Program2Output.php">
             
-            <h1 style='color: crimson' ><u>OLIVE FAMILY MART</u></h1>
+            <h1 style='color: crimson' ><u>FAMILY MART</u></h1>
             <h3 style='color: darkred'>Fill your Cart</h3>
             <br>
             
