@@ -72,7 +72,7 @@ else
         $qty=$_POST['pro_qty'];
         $price=$_POST['pro_price'];
         $manufacture=$_POST['pro_manu'];
-        if(isset($_POST["uid"]))
+        if(isset($_POST["uid"]))  //use uid!=NULL while insertion
         {
             $updateQry="update tbl_product set pro_id='$id',pro_name='$name',pro_quantity='$qty',pro_price='$price',pro_manufacture='$manufacture' where pro_id='$uid'";
             if(mysqli_query($con,$updateQry))
