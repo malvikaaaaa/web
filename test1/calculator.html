@@ -1,0 +1,46 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <center>
+            Number 1 <input type="text" id="num1"><br><br>
+            Number 2 <input type="text" id="num2"><br><br>
+            <input type="button" name="add" value="Sum" onclick="add()">&nbsp;&nbsp;<input type="button" name="diff" value="Difference" onclick="diff()">
+            &nbsp;&nbsp;<input type="button" name="mul" value="Product" onclick="pro()">&nbsp;&nbsp;<input type="button" name="div" value="Quotient" onclick="div()"><br><br>
+            Result <input type="text" id="result">
+        </center>
+        
+
+    </body>
+</html>
+<script type="text/javascript">
+    function add()
+    {
+        var num1=parseFloat(document.getElementById('num1').value)
+        var num2=parseFloat(document.getElementById('num2').value)
+        //document.write(num1+num2)
+        result=num1+num2
+        document.getElementById('result').value=result
+    }
+    function diff()
+    {
+        var num1=parseFloat(document.getElementById('num1').value)
+        var num2=parseFloat(document.getElementById('num2').value)
+        result=num1-num2
+        document.getElementById('result').value=result
+    }
+    function pro()
+    {
+        var num1=parseFloat(document.getElementById('num1').value)
+        var num2=parseFloat(document.getElementById('num2').value)
+        result=num1*num2
+        document.getElementById('result').value=result
+    }
+    function div()
+    {
+        var num1=parseFloat(document.getElementById('num1').value)
+        var num2=parseFloat(document.getElementById('num2').value)
+        result=num1/num2
+        document.getElementById('result').value=result
+    }
+</script>
